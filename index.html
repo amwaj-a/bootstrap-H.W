@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap</title>
+    <!-- bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      h1 {
+        font-size: 3rem;
+      }
+      img {
+        width: 10%;
+      }
+      .btn-gray {
+        background-color: #f1f5f9;
+      }
+      @media only screen and (max-width: 990px) {
+        img {
+          width: 20%;
+        }
+      }
+      @media only screen and (max-width: 558px) {
+        img {
+          width: 30%;
+        }
+      }
+      .btn-navbar {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .btn-btnpurbal {
+        color: aliceblue;
+        background-color: #754ffe;
+      }
+      .leftCol span {
+        color: gray;
+        display: block;
+      }
+      .leftCol svg {
+        color: #ffb739;
+      }
+      .leftCol button {
+        background-color: #38a169;
+        color: aliceblue;
+      }
+      .spanperpul {
+        color: #754ffe;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          class="navbar-brand"
+          src="https://logowik.com/content/uploads/images/geeks-ui35713.logowik.com.webp"
+          alt=""
+        />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Browse
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Landings
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Accounts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <form class="nav-item d-flex" role="search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+
+                <input
+                  class="form-control ms-2"
+                  type="search"
+                  placeholder=" Search Courses"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <svg
+                class="text-secondary mt-2 navbar-brand"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-sun-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                />
+              </svg>
+            </li>
+            <li class="nav-item">
+              <button class="btn-navbar ms-2">Sign In</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn-btnpurbal btn-navbar mx-2">Sign up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <!-- header -->
+    <header>
+      <div class="row container m-4">
+        <!-- Header Left -->
+        <div class="col-12 col-sm-7 leftCol">
+          <h1 class="my-5 fw-bold">Become a Vanilla JavaScript Developer</h1>
+
+          <p>
+            In this tutorial, we are going to learn about JavaScript (Vanilla
+            js)- for building incredible, powerful JavaScript application
+          </p>
+
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-clock"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
+              />
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"
+              />
+            </svg>
+            4 Houre</span
+          >
+
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-camera-video"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"
+              />
+            </svg>
+            12 Videos</span
+          >
+
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+              />
+            </svg>
+
+            10,234+ Enrolled</span
+          >
+          <br />
+
+          <button class="btn-navbar">Watch Perview</button>
+        </div>
+        <!-- header right -->
+        <div class="col-12 col-sm-5 my-4">
+          <form
+            class="form-control bg-white shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+          >
+            <h3>Create Free Account</h3>
+            <div class="text-center">
+              <button class="btn m-2 btn-gray text-black">
+                <svg
+                  class="text-danger"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-google"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                  />
+                </svg>
+                Google
+              </button>
+
+              <button class="btn m-2 btn-gray text-black">
+                <svg
+                  class="text-info"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                  />
+                </svg>
+                Twitter
+              </button>
+              <button class="btn m-2 btn-gray text-black">
+                <svg
+                  style="color: #754ffe"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+
+                Facebook
+              </button>
+            </div>
+            <div class="my-4">
+              <p class="w-100 text-center border-bottom lh-1">
+                <span class="bg-white fw-light p-2">OR</span>
+              </p>
+            </div>
+
+            <div class="my-3">
+              <input placeholder="email" type="email" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-btnpurbal w-100 mb-3">
+              Start Courses for Free
+            </button>
+
+            <hr />
+            <p class="my-3">
+              By continuing you accept the
+              <strong>Terms of Use, Privacy Policy</strong>, and
+              <strong>Data Policy</strong>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-around text-center">
+        <span class="col-12 col-sm-3"
+          ><svg
+            class="text-warning"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-check-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+            />
+          </svg>
+          shareable Certificate
+        </span>
+        <span class="col-12 col-sm-3"
+          ><svg
+            class="text-warning"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-check-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+            />
+          </svg>
+          Flexible Deadlines
+        </span>
+        <span class="col-12 col-sm-3"
+          ><svg
+            class="text-warning"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-check-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+            />
+          </svg>
+          Approx.24 hours
+        </span>
+        <span class="col-12 col-sm-3"
+          ><svg
+            class="text-warning"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-check-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+            />
+          </svg>
+          100% Online Courses
+        </span>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="my-4">
+      <!-- section1 -->
+      <section
+        style="background-color: #e2e8f0"
+        class="text-center pt-5 d-flex flex-column lh-lg"
+      >
+        <span class="spanperpul">COURSE DESCRIPTION</span>
+        <h1>What will you learn?</h1>
+        <p class="w-50 m-auto text-secondary fs-4">
+          vanilla JS is a fast, lightweight, cross-platformframework for
+          building incredible, powerful JavaScript application.
+        </p>
+        <!-- cards -->
+        <div class="row row-cols-1 row-cols-md-2 g-4 m-5">
+          <div class="col">
+            <div class="card p-4">
+              <div class="card-title">
+                <svg
+                  style="background-color: #754ffe"
+                  class="text-white float-start m-2 rounded-circle p-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-box"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"
+                  />
+                </svg>
+
+                <div class="text-start">
+                  <h2>
+                    Introduction to JavaScript
+                    <span
+                      class="fs-6 bg-warning text-white fw-normal p-1 rounded"
+                      >Free</span
+                    >
+                  </h2>
+
+                  <div class="d-flex justify-content-between fw-bold w-50">
+                    <span class="">COURSES-1</span>
+                    <small class="text-secondary">6LESSONS</small>
+                    <small class="text-secondary">1HOUR 12 MIN</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body text-start mx-2">
+                <p class="card-text text-secondary">
+                  In et tempus dui,ipsum dolor sit amet consectetur, adipisicing
+                  elit. Praesentium laudantium vero amet ipsum debitis, qui ut
+                  quaerat fuga doloribus esse.
+                </p>
+                <a class="card-text fw-bold" href=""> viwe Chapter Details +</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card p-4">
+              <div class="card-title">
+                <svg
+                  style="background-color: #754ffe"
+                  class="text-white float-start m-2 rounded-circle p-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-box"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"
+                  />
+                </svg>
+
+                <div class="text-start">
+                  <h2>JavaScript Beginning</h2>
+
+                  <div class="d-flex justify-content-between fw-bold w-50">
+                    <span class="">COURSES-2</span>
+                    <small class="text-secondary">4LESSONS</small>
+                    <small class="text-secondary">32 MIN</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body text-start mx-2">
+                <p class="card-text text-secondary">
+                  Maleusada fames Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Praesentium laudantium vero amet ipsum
+                  debitis, qui ut quaerat fuga doloribus esse.
+                </p>
+                <a class="card-text fw-bold" href=""> viwe Chapter Details +</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card p-4">
+              <div class="card-title">
+                <svg
+                  style="background-color: #754ffe"
+                  class="text-white float-start m-2 rounded-circle p-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-box"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"
+                  />
+                </svg>
+
+                <div class="text-start">
+                  <h2>Variables and Constants</h2>
+
+                  <div class="d-flex justify-content-between fw-bold w-50">
+                    <span class="">COURSES-3</span>
+                    <small class="text-secondary">8LESSONS</small>
+                    <small class="text-secondary">10 MIN</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body text-start mx-2">
+                <p class="card-text text-secondary">
+                  Aliquam pulvinar eros a dicturamet consectetur, adipisicing
+                  elit. Praesentium laudantium vero amet ipsum debitis, qui ut
+                  quaerat fuga doloribus esse.
+                </p>
+                <a class="card-text fw-bold" href=""> viwe Chapter Details +</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card p-4">
+              <div class="card-title">
+                <svg
+                  style="background-color: #754ffe"
+                  class="text-white float-start m-2 rounded-circle p-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-box"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"
+                  />
+                </svg>
+
+                <div class="text-start">
+                  <h2>Types and Operators</h2>
+
+                  <div class="d-flex justify-content-between fw-bold w-50">
+                    <span class="">COURSES-4</span>
+                    <small class="text-secondary">10LESSONS</small>
+                    <small class="text-secondary">32 MIN</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body text-start mx-2">
+                <p class="card-text text-secondary">
+                  In lobortis quam eu augue adipisicing elit. Praesentium
+                  laudantium vero amet ipsum debitis, qui ut quaerat fuga
+                  doloribus esse.
+                </p>
+                <a class="card-text fw-bold" href=""> viwe Chapter Details +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section2 -->
+      <section class="container d-flex flex-column gap-5 mt-3 text-center">
+        <div class="row">
+          <div class="col-11 col-sm-5 offset-1">
+            <img
+              class="w-100 rounded-circle"
+              src="https://img.freepik.com/free-photo/african-american-man-with-round-glasses_273609-9795.jpg?t=st=1716252386~exp=1716255986~hmac=3d7a843e50251cd2c899a6b58602c6ce59fd4f62cff9aed23e7d8a6ffa773ec7&w=826"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-sm-6">
+            <span class="spanperpul">Your Instructor</span>
+            <h2>
+              Hi, I'm <span class="spanperpul" class="fs-1">James Davies</span>,
+              <br />
+              I will be taking you through lessons.
+            </h2>
+            <p>
+              Create beautiful website with this Geeks UI template. Get started
+              building a site today.
+            </p>
+            <hr />
+            <div class="d-flex justify-content-around text-center">
+              <div class="d-flex flex-column">
+                <strong>45</strong>
+                <span>Lessons</span>
+              </div>
+
+              <div class="d-flex flex-column">
+                <strong>10,500+</strong>
+                <span>Student</span>
+              </div>
+
+              <div class="d-flex flex-column">
+                <strong>12+</strong>
+                <span>Learning Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <span class="text-center spanperpul mY-5"
+          >TRUSTED BY TOP-TIRE PRODUCT COMPANIES
+        </span>
+        <div class="d-flex text-center justify-content-around w-50 m-auto">
+          <img
+            src="https://s3.amazonaws.com/Snowcovered_C_Images/41492_stripecheck.png"
+            alt=""
+          />
+          <img
+            src="https://mlryihp0gvx9.i.optimole.com/djM0qiA-jrEKcT3E/w:300/h:137/q:auto/dpr:1.5/https://leadingwithintent.com/wp-content/uploads/2017/12/logo-airbnb-404px-grey.png"
+            alt=""
+          />
+          <img
+            src="https://mlryihp0gvx9.i.optimole.com/djM0qiA-jrEKcT3E/w:300/h:137/q:auto/dpr:1.5/https://leadingwithintent.com/wp-content/uploads/2017/12/logo-airbnb-404px-grey.png"
+            alt=""
+          />
+          <img
+            src="https://mlryihp0gvx9.i.optimole.com/djM0qiA-jrEKcT3E/w:300/h:137/q:auto/dpr:1.5/https://leadingwithintent.com/wp-content/uploads/2017/12/logo-airbnb-404px-grey.png"
+            alt=""
+          />
+          <img
+            src="https://i0.wp.com/guitarandlace.com/wp-content/uploads/2024/02/Netflix-free-white-app-icons.jpg?w=256&ssl=1"
+            alt=""
+          />
+        </div>
+        <hr />
+      </section>
+    </main>
+    <footer>
+      <div class="row container">
+        <div class="col-12 col-sm-4 offset-1">
+          <img
+            class="w-25"
+            src="https://logowik.com/content/uploads/images/geeks-ui35713.logowik.com.webp"
+            alt=""
+          />
+          <p>
+            Geek Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nemo,udiandae. Tenetur, delectus nemo!
+          </p>
+          <svg
+            class="text-secondary"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+            />
+          </svg>
+          <svg
+            class="text-secondary"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-twitter"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+            />
+          </svg>
+
+          <svg
+            class="text-secondary"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-google"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+            />
+          </svg>
+        </div>
+
+        <div class="col-12 col-sm-2 d-flex flex-column">
+          <strong>Company</strong>
+          <span>About</span>
+          <span>Pricing</span>
+          <span>Blog</span>
+          <span>careers</span>
+          <span>contact</span>
+        </div>
+        <div class="col-12 col-sm-2 d-flex flex-column">
+          <strong>Support</strong>
+          <span>Help and Support</span>
+          <span>Become</span>
+          <span>Get the app</span>
+          <span>FAQ's </span>
+          <span>Tutorial</span>
+        </div>
+
+        <div class="col-12 col-sm-3 d-flex flex-column">
+          <strong>Get in touch</strong>
+          <span>339 McDermott points Hetting,15283</span>
+          <span
+            >Email: <span class="spanperpul"> support@geeksui.com</span></span
+          >
+          <span>phone: <strong>(000)123456789</strong></span>
+          <img
+            class="w-75"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5NPxV0DWu0z9wILXrSPsAFiRkBRol6zk8sFr5TztM4-eRxXn"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr />
+      <br />
+      <div class="d-flex justify-content-around text-secondary">
+        <span> © 2023 Geeks-UI, Inc. All Rights Reserved</span>
+        <span>Privacy Policy</span>
+        <span> Cookie Notice</span>
+        <span> Do Not Sell My Personal Information </span>
+        <span> Terms of Use</span>
+      </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
